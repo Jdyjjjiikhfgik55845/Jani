@@ -65,8 +65,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
             )
-        ],
-        InlineKeyboardButton("➥ 𝗝𝗮𝗻𝗶 ✘ 𝗠𝘂𝘀𝗶𝗰 𔘓 𝗣𝗼𝘄𝗲𝗿", url=f"https://t.me/Jani_Music_Robot?start=help"),
+        ],    
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
@@ -81,7 +80,6 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        InlineKeyboardButton("➥ 𝗝𝗮𝗻𝗶 ✘ 𝗠𝘂𝘀𝗶𝗰 𔘓 𝗣𝗼𝘄𝗲𝗿", url=f"https://t.me/Jani_Music_Robot?start=help"),
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
